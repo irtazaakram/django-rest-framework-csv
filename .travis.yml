@@ -1,10 +1,11 @@
 sudo: false
-dist: xenial
+dist: jammy
 language: python
 python:
-  - "2.7"
-  - "3.5"
-  - "3.6"
+  - "3.8"
+  - "3.9"
+  - "3.10"
+  - "3.11"
 
 install:
   - pip install tox tox-travis
