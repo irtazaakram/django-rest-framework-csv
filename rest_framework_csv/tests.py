@@ -246,7 +246,7 @@ class TestCSVParser(TestCase):
 
         parser = CSVParser()
 
-        with open(CSVFILE, 'rbU') as csv_file:
+        with open(CSVFILE, 'rb') as csv_file:
             data = parser.parse(csv_file)
             self.assertEqual(data, [{'Name': 'Kathryn Miller', 'ID': '67', 'Country': 'United States'},
                                     {'Name': 'Jen Mark',       'ID': '78', 'Country': 'Canada'}])
